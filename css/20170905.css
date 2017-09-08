@@ -78,6 +78,7 @@
 .footer.inner {
    overflow: hidden;
     padding: 20px 5px;
+    box-sizing: border-box;
 }
 
 .footer.inner .copyright {
@@ -91,6 +92,84 @@
 .footer.inner #footer_nav ul {
     padding-left: 0;
 }
+
+.footer.inner ul li a {
+    color: #999;
+    text-decoration: underline;
+}
+
+.footer.inner ul li a:hover {
+    color: #ccc;
+}
+
+
+/*page flexSuccessor.jsp*/
+
+
+.title-list-move-application {
+    margin: 40px 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    padding: 0 20px;
+}
+
+.list-move-application {
+    padding-left: 0;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list-move-application li {
+    box-sizing: border-box;
+    list-style: none;
+    width: 33.33%;
+    float: left;
+    padding: 0 20px 20px 20px;
+}
+
+.list-move-application li.offset-large {
+    margin-left: 16.6%;
+}
+
+.list-move-application li .header {
+    padding: 10px 10px 10px 50px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.list-move-application li .content {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.3;
+
+}
+
+.list-move-application li .link {
+    text-align: center;
+    display: block;
+    color: #5bb7f1;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.block01 .header {
+    background: url("../images/icon-list-app/grid.png") no-repeat 0 50%;
+}
+.block02 .header {
+    background: url("../images/icon-list-app/SQL3.png") no-repeat 0 50%;
+}
+.block03 .header {
+    background: url("../images/icon-list-app/datasource-generator.png") no-repeat 0 50%;
+}
+.block04 .header {
+    background: url("../images/icon-list-app/RoleSecurity.png") no-repeat 0 50%;
+}
+.block05 .header {
+    background: url("../images/icon-list-app/mobile.png") no-repeat 0 50%;
+}
+
+
 
 
 /*media*/
@@ -106,7 +185,10 @@
     }
 }
 
+
+
 @media only screen and (max-width: 960px) {
+
     .landing-content-wrapper .cta-text {
         font-size: 22px;
     }
@@ -124,6 +206,24 @@
     }
     .landing-wrapper>li, .landing-features-back, .landing-features {
         height: 400px;
+    }
+
+
+    .list-move-application li {
+        width: 50%;
+    }
+    .list-move-application li.offset-large {
+        margin-left: 0;
+    }
+
+    .list-move-application li.offset-small {
+        margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .title-list-move-application {
+        font-size: 32px;
     }
 }
 
@@ -148,6 +248,14 @@
     .landing-fixed  .landing-content .landing-fixed-text {
         padding-bottom: 35px;
     }
+
+    .list-move-application li {
+        width: 100%;
+    }
+
+    .list-move-application li.offset-small {
+        margin-left: 0;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -162,3 +270,6 @@
         margin: 0;
     }
 }
+
+
+
